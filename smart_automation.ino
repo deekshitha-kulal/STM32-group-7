@@ -84,7 +84,7 @@ void loop() {
         // Motor ON
         digitalWrite(IN1, HIGH);
         digitalWrite(IN2, LOW);
-
+        //FAN ON
         u8g2.drawStr(0, 58, "Fan : ON");
 
         Serial1.println("Fan ON");
@@ -94,7 +94,7 @@ void loop() {
         // Motor OFF
         digitalWrite(IN1, LOW);
         digitalWrite(IN2, LOW);
-
+        //FAN ON
         u8g2.drawStr(0, 58, "Fan : OFF");
 
         Serial1.println("Fan OFF");
@@ -127,8 +127,8 @@ void loop() {
     Serial1.println("Light OFF");
     Serial1.println("Fan OFF");
   }
+  //hello punya
 
   u8g2.sendBuffer();
-
   delay(1000);
 }
